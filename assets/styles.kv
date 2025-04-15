@@ -1,0 +1,21 @@
+<LoginScreen>:
+    GridLayout:
+        rows: 3
+        cols: 2
+        spacing: 20
+        padding: 20
+        Label:
+            text: "Identificate"
+        Button:
+            text: "INICIAR SESION"
+            on_press: app.root.current = "login"  # Cambiar a la pantalla de administración
+        Label:
+            text: "Usuario"
+        TextInput:
+            id: username 
+            Label:
+            text: "Contraseña"
+        TextInput:
+            id: username 
+        
+

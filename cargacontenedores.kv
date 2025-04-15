@@ -1,0 +1,33 @@
+<LoginScreen>:
+    GridLayout:
+        rows: 3
+        cols: 2
+        spacing: 10
+        padding: 20
+        Label:
+            size_hint: None, None
+            size: 150, 30
+            text: "Usuario"
+        TextInput:
+            size_hint: None, None
+            size: 150, 30
+            id: username 
+        Label:
+            size_hint: None, None
+            size: 150, 30
+            text: "Contraseña"
+        TextInput:
+            size_hint: None, None
+            size: 150, 30
+            id: password 
+        Label:
+            size_hint: None, None
+            size: 150, 30 
+            text: "IMEMSA"
+
+        Button:
+            size_hint: None, None
+            size: 200, 40
+            text: "INICIAR SESION"
+            on_press: app.root.current = "home"  # Cambiar a la pantalla de administración
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+</head>
+<body>
+    <h2>Unidad 9</h2>
+   
+    <script>    
+        async function obtenerNumeroDeRegistros() {
+            try {
+                //  Hacer la petición a la API
+                let response = await fetch("https://api.github.com/users");
+
+                // Verificar si la respuesta es exitosa
+                if (!response.ok) {
+                    throw new Error(`Error en la solicitud: ${response.status}`);
+                }
+
+                // Convertir la respuesta a JSON
+                let usuarios = await response.json();
+
+                // Obtener la cantidad de registros
+                let numeroDeRegistros = usuarios.length;
+
+                // Imprimir el número de registros
+                console.log("Número de registros regresados:", numeroDeRegistros);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+// Llamar a la función
+obtenerNumeroDeRegistros();
+
+    </script>
+</body> 
+</html>

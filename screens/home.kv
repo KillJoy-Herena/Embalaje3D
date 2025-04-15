@@ -1,0 +1,47 @@
+<HomeScreen>:
+    StackLayout:
+        orientation: 'lr-tb'  # De izquierda a derecha, de arriba a abajo
+        padding: 20
+        spacing: 20
+
+        # Botón 1
+        Button:
+            text: "Generar reporte"
+            size_hint: 0.3, 0.2
+
+        # Botón 2
+        Button:
+            text: "Gestionar contenedores"
+            size_hint: 0.3, 0.2
+
+        # Botón 3
+        Button:
+            text: "Gestionar paquetes"
+            size_hint: 0.3, 0.2
+
+        # Botón 4
+        Button:
+            text: "Cargar contenedor"
+            size_hint: 0.3, 0.2
+            on_press: root.manager.current = 'carga'
+
+        # Botón 5
+        Button:
+            text: "Botón 5"
+            size_hint: 0.3, 0.2
+
+        # Botón 6
+        Button:
+            text: "otro boton"
+            size_hint: 0.3, 0.2
+
+        # Botón 7
+        Button:
+            text: "Historial"
+            size_hint: 0.3, 0.2
+
+        # Botón que lleva a CargaScreen
+        Button:
+            text: "Rutas"
+            size_hint: 0.3, 0.2
+           

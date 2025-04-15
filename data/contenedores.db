@@ -1,0 +1,16 @@
+CREATE TABLE paquetes (
+    id INT PRIMARY KEY,
+    nombre VACHAR(255) NOT NULL,
+    alto INT NOT NULL,
+    ancho INT NOT NULL,
+    volumen INT ,
+);
+
+CREATE TABLE contenedores (
+    id INT PRIMARY KEY,
+    nombre VACHAR(255) NOT NULL,
+    alto INT NOT NULL,
+    ancho INT NOT NULL,
+    volumen INT ,
+    capacidad INT ,
+);

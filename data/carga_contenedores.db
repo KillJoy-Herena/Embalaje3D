@@ -1,0 +1,13 @@
+CREATE TABLE paquetes (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT,
+    peso REAL,
+    volumen REAL
+);
+
+CREATE TABLE contenedores (
+    id INTEGER PRIMARY KEY,
+    nombre TEXT,
+    capacidad_peso REAL,
+    capacidad_volumen REAL
+);
